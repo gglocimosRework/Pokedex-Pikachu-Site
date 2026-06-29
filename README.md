@@ -21,6 +21,9 @@ git clone [https://github.com/gglocimosRework/Pokedex-Pikachu-Site.git](https://
 
 ### Future Improvements
 -Add base stat progress bars (HP, Attack, Defense, Speed) to the cards
+
 -Implement a "Shiny Sprite" toggle option
+
 -Play official Pokémon audio cries upon loading a card
+
 -Store user favorite Pokémon using browser localStorage
