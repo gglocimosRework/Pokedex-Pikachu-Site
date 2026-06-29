@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon roll</title>
+    <link rel="stylesheet" href="pokédex.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left"> 
+         <span class="logo">⚡</span>
+         <h1 class="main-title">Pokemon Search</h1>
+       </div>
+
+
+        <div class="tabs">
+        <button id="searchTab" class="tab active">🔍 Search</button>
+        <button id="randomTab" class="tab">🎲 Random</button>
+        </div>
+    </header>
+    
+    <div class="app">
+    <div id="searchSection" class="section">
+        <input type="text" id="searchInput" placeholder="Search by name or ID(e.g., pikachu 25)"/>
+        <button id="searchBtn">Search</button>
+     <div id="pokemonContainerSearch"></div>
+    </div>
+
+    <div id="randomSection" class="section hidden">
+        <button id="randomBtn">Get Random Pokemon</button>
+        <div id="pokemonContainerRandom"></div>
+    </div>
+
+    
+    <div id="loading" class="hidden">
+        Loading...
+    </div>
+    <div id="error" class="error hidden">
+        
+    </div>
+   </div>
+  <script src="pokedex.js"></script>
+ </body>
+</html>

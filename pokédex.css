@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  min-height: 100vh;
+}
+.header {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 30px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.main-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+.tabs button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tabs {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  position:relative;
+  top: 1px;
+}
+.tab {
+  opacity: 0.6;
+  position: relative;
+  font-weight: bold;
+  padding-bottom: 12px;
+  transition: all 0.3s;
+  gap: 6px;            
+  color: #333;
+}
+
+.tab:hover {
+  opacity: 0.85;
+}
+.tab.active {
+  border-bottom: 2px solid rgb(233, 58, 93);
+  color: rgb(233, 58, 93);
+  opacity: 1;
+}
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;      
+  width: 100%;
+  height: 3px;
+  background: rgb(233, 58, 93);
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;   
+  padding: 0 20px;
+}
+
+
+.section {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 34px;
+  margin-bottom: 15px;
+}
+
+.section ::placeholder {
+    color: #333;
+    font-weight: 500;
+    
+}
+
+input {
+  background: #dbdbdb;
+  opacity: 0.9;
+  width: 80%;
+  padding: 12px 45px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  font-weight: bold;
+  padding: 14px 16px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(233, 58, 93);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+#randomSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#randomBtn {
+  font-size: 15px;
+  padding: 15px 38px;
+}
+#pokemonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.hidden {
+  display: none !important;
+}
+
+#error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+
+.pokemon-card {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pokemon-card img {
+  width: 120px;
+}
+
+.types {
+  margin: 8px 0;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 6px;
+  background: #ddd;
+  font-size: 12px;
+}
